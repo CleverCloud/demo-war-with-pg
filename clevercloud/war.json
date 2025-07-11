@@ -1,0 +1,15 @@
+{
+   "build": {
+      "type": "maven",
+      "goal": "clean package"
+   },
+   "deploy": {
+      "container": "WILDFLY33",
+      "war": [
+         {
+            "file": "target/simple-wildfly-app-1.0.0.war",
+            "context": "/"
+         }
+      ]
+   }
+}
